@@ -1,0 +1,25 @@
+@import './var'
+@import './global'
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap')
+
+@import 'node_modules/bootstrap/scss/bootstrap'
+@import 'node_modules/bootstrap-vue/src/index.scss'
+h1.large-title
+    font-size: 72px
+    font-family: 'Playfair Display', serif
+    @include media-breakpoint-down(lg) 
+        font-size: 50px
+    @include media-breakpoint-down(sm) 
+        font-size: 40px
+    @include media-breakpoint-down(xs) 
+        font-size: 28px
+
+h2
+    @include media-breakpoint-down(sm) 
+        font-size: 26px
+    @include media-breakpoint-down(xs) 
+        font-size: 18px
+
+    
+
+    
