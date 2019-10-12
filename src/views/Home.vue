@@ -1,17 +1,49 @@
 <template>
   <div>
     <large-hero />
-    <div class="facts">
-      <div class="row">
-        <div
-          v-for="fact in facts"
-          :key="fact.title"
-          class="col-md-6 col-lg-3 col-sm-2"
-        >
-          <fact :fact="fact" />
+    <!-- facts -->
+    <div class="bg-primary">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            v-for="fact in facts"
+            :key="fact.title"
+            class="col-sm-6 col-lg-3 col-sm-2"
+          >
+            <fact :fact="fact" />
+          </div>
         </div>
       </div>
     </div>
+    <!-- End facts -->
+
+    <!-- waht we do section -->
+    <div class="section what-we-do bg-offwite text-center">
+      <div class="center-y-x p-5">
+        <h1 class="section__title"> Waht we do </h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-4 col-sm-2"
+            v-for="work in works"
+            :key="work.id"
+          >
+            <work :work="work" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End waht we do section -->
+
+
+
+    <!-- parallax -->
+    <div class="parallax">
+      <img src="/images/parallax1.jpg" >
+      <h1 class="parallax_text">black seed oil can reduce the severity of hand eczema
+    </div>
+    <!-- End parallax -->
 
   </div>
 </template>
@@ -19,34 +51,17 @@
 <script>
 import largeHero from '@/components/large-hero'
 import fact from '@/components/fact'
+import staticData from '@/utils/static-data'
+import work from '@/components/work'
 export default {
   components: {
     largeHero,
-    fact
+    fact,
+    work
   },
   data: () => ({
-    facts: [
-      {
-        icon: 'inspired-by-nature',
-        title: 'Special oil',
-        text: 'The taste, the aroma and the natural ingredients of olive oils are kept unaltered.'
-      },
-      {
-        icon: 'drop',
-        title: 'pure oil',
-        text: 'The taste, the aroma and the natural ingredients of olive oils are kept unaltered.'
-      },
-      {
-        icon: 'bottle',
-        title: 'Health benefits',
-        text: 'The taste, the aroma and the natural ingredients of olive oils are kept unaltered.'
-      },
-      {
-        icon: 'bottle1',
-        title: 'Health benefits',
-        text: 'The taste, the aroma and the natural ingredients of olive oils are kept unaltered.'
-      }
-    ]
+    facts: staticData.facts,
+    works: staticData.works
   })
 
 }

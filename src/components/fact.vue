@@ -1,9 +1,14 @@
 <template>
-  <div class="fact">
-    <div class="icon"></div>
-    <h4 class="fact__title">{{fact.title}}</h4>
-    <div class="mt-0 row-div"> <b>___</b> </div>
-    <div class="fact__text">{{fact.text}}</div>
+  <div class="p-4 pt-5 text-center">
+    <div class="rounded-container">
+      <span :class="`icon ${fact.icon} center-y`"></span>
+    </div>
+    <div class="item-description">
+      <h4 class="item-desctiption__title align-center playfair">{{fact.title}}</h4>
+      <span class="line-divider"></span>
+      <p>{{fact.text}}</p>
+    </div>
+
   </div>
 </template>
 
