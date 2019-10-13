@@ -25,7 +25,7 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-md-4 col-sm-2"
+            class="col-md-4 col-sm-6"
             v-for="work in works"
             :key="work.id"
           >
@@ -38,12 +38,37 @@
 
 
 
-    <!-- parallax -->
-    <div class="parallax">
-      <img src="/images/parallax1.jpg" >
-      <h1 class="parallax_text">black seed oil can reduce the severity of hand eczema
+
+    <!-- Begin parallax -->
+    <div class="jumbotron paral paralsec1">
+      <h2 class="display-3">Almond oil is an excellent source of vitamin E and contains a small amount of vitamin K</h2>
     </div>
     <!-- End parallax -->
+
+
+    <!-- new products section -->
+    <div class="section what-we-do bg-offwite text-center">
+      <div class="center-y-x p-5">
+        <h1 class="section__title"> New products </h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-3 col-sm-6"
+            v-for="product in products"
+            :key="product.id"
+          >
+          <product-card :product="product" />
+          </div>
+        </div>
+        <div class="row d-flex align-itemms-center justify-content-center py-3">
+          <button class="btn btn-primary btn-lg">
+            view all
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End new products section -->
 
   </div>
 </template>
@@ -53,15 +78,19 @@ import largeHero from '@/components/large-hero'
 import fact from '@/components/fact'
 import staticData from '@/utils/static-data'
 import work from '@/components/work'
+import productCard from '@/components/product-card'
+
 export default {
   components: {
     largeHero,
     fact,
-    work
+    work,
+    productCard
   },
   data: () => ({
     facts: staticData.facts,
-    works: staticData.works
+    works: staticData.works,
+    products: staticData.products
   })
 
 }
