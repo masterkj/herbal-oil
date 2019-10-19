@@ -72,6 +72,32 @@ export default {
           name: 'sesame almond oil',
           price: 25.12,
         }
-       
+      ],
+      members: [
+        {
+          id: 1,
+
+          name: 'Eyad alkeddah',
+          image: '/images/team-eyad.jpg',
+          position: 'General Manager'
+        },
+        {
+          id: 2,
+          name: 'Ammar alkeddah',
+          image: '/images/team-ammar.jpg',
+          position: 'Ceo-Founder'
+        },
+        {
+          id: 3,
+          name: 'Nathan Smith',
+          image: '/images/team-3.jpg',
+          position: 'A grower'
+        },
+        {
+          id: 4,
+          name: 'Joe Carter',
+          image: '/images/team-4.jpg',
+          position: 'A grower'
+        }
       ]
 }

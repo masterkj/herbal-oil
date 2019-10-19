@@ -18,7 +18,7 @@
       <h3 class="text-secondary">{{product.price}}$</h3>
     </div>
     <div class="row d-flex align-items-center justify-content-center">
-      <button class="btn btn-primary mt-0 mb-4">show product</button>
+      <button class="btn btn-light mt-0 mb-4">show product</button>
     </div>
   </div>
 </template>

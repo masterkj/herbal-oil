@@ -1,4 +1,5 @@
 .btn
+    transition: all .3s ease
     color: $gray
     font-weight: 200
     border-radius: 3px
@@ -10,4 +11,5 @@
         width: 170px
         @include media-breakpoint-down(sm)
             width: 120px
-            
+    &-light:hover
+        background-color: $primary
