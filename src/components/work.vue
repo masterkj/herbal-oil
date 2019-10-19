@@ -3,7 +3,7 @@
     <div class="overlay mb-3">
       <img
         class="image"
-        :src="`/images/${work.image}`"
+        :src="`/herbal-oil`+`/images/${work.image}`"
       >
       <div class="overlay d-flex justify-content-center align-items-center ">
         <div class="rounded-container rounded-container-trans">

@@ -3,7 +3,7 @@
     <div class="overlay">
       <img
         class="card-img-top"
-        :src="product.image"
+        :src="`/herbal-oil`+product.image"
       >
       <div class="overlay overlay-transparent d-flex justify-content-center align-items-center">
         <div class="squeare-container">
