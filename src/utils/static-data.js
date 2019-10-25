@@ -75,17 +75,17 @@ export default {
       ],
       members: [
         {
+          id: 2,
+          name: 'Ammar alkeddah',
+          image: '/images/team-ammar.jpg',
+          position: 'Ceo-Founder'
+        },
+        {
           id: 1,
 
           name: 'Eyad alkeddah',
           image: '/images/team-eyad.jpg',
           position: 'General Manager'
-        },
-        {
-          id: 2,
-          name: 'Ammar alkeddah',
-          image: '/images/team-ammar.jpg',
-          position: 'Ceo-Founder'
         },
         {
           id: 3,

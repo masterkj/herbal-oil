@@ -1,5 +1,5 @@
 <template>
-  <div class="member text-center">
+  <div class="member mt-4 text-center">
     <img
       class="member__image mb-3"
       :src="`/herbal-oil`+member.image"

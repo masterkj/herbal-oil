@@ -1,9 +1,12 @@
 <template>
   <div>
+
     <large-hero />
+
+    
     <!-- facts -->
     <div class="bg-primary">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div
             v-for="fact in facts"
@@ -38,7 +41,7 @@
 
     <!-- Begin parallax -->
     <div class="jumbotron paral paralsec1">
-      <h2 class="display-3">Almond oil is an excellent source of vitamin E and contains a small amount of vitamin K</h2>
+      <h3 class="display-3">Almond oil is an excellent source of vitamin E and contains a small amount of vitamin K</h3>
     </div>
     <!-- End parallax -->
 
