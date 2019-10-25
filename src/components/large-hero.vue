@@ -9,9 +9,7 @@
       </div>
     </div>
 
-    <div class="large-hero__image">
-
-    </div>
+    <div class="large-hero__image" />
 
   </div>
 </template>
